@@ -15,7 +15,6 @@ public class NewBehaviourScript : MonoBehaviour
     void Start()
     {
       Debug.Log("Movement Started");
-        dude.useGravity() = true;
     }
 
     // Update is called once per frame
@@ -34,7 +33,7 @@ public class NewBehaviourScript : MonoBehaviour
         }
 
         if (Input.GetKeyDown( KeyBinds.getKey("Right"))) {
-            dude.AddFoce(0, RIGHT_SPEED * Time.deltaTime, 0);
+            dude.AddForce(0, RIGHT_SPEED * Time.deltaTime, 0);
         }
 
     }

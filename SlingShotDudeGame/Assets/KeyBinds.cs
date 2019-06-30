@@ -5,14 +5,14 @@ using UnityEngine;
 public class KeyBinds : MonoBehaviour
 {
 
-    private Dictionary<string, KeyCode> keys = new Dictionary<string, KeyCode>(); 
+    private static Dictionary<string, KeyCode> keys = new Dictionary<string, KeyCode>(); 
     // Start is called before the first frame update
     void Start()
     {
         keys.Add("Up", KeyCode.Space);
-        keys.Add("Down", KeyCode.s);
-        keys.Add("Right", KeyCode.d);
-        keys.Add("Left", KeyCode.a); 
+        keys.Add("Down", KeyCode.S);
+        keys.Add("Right", KeyCode.D);
+        keys.Add("Left", KeyCode.A); 
         
     }
 
@@ -22,7 +22,7 @@ public class KeyBinds : MonoBehaviour
         
     }
 
-    public static KeyCode getKey(String keyName) {
+    public static KeyCode getKey(string keyName) {
         return keys[keyName];
     }
 }
