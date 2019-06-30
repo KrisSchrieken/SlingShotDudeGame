@@ -22,7 +22,7 @@ public class KeyBinds : MonoBehaviour
         
     }
 
-    public KeyCode getKey(String keyName) {
+    public static KeyCode getKey(String keyName) {
         return keys[keyName];
     }
 }

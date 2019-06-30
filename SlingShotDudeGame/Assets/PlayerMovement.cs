@@ -21,19 +21,19 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ( Input.GetKey("w") ) {
+        if ( Input.GetKeyDown(KeyBinds.getKey("Up"))) {
             dude.AddForce(0, UP_SPEED * Time.deltaTime, 0);    
         }
 
-        if (Input.GetKey("s")) {
+        if (Input.GetKeyDown( KeyBinds.getKey("Down"))) {
             dude.AddForce(0, DOWN_SPEED * Time.deltaTime, 0);
         }
 
-        if (Input.GetKey("a")) {
+        if (Input.GetKeyDown( KeyBinds.getKey("Left"))) {
             dude.AddForce(0, LEFT_SPEED * Time.deltaTime, 0);
         }
 
-        if (Input.GetKey("d")) {
+        if (Input.GetKeyDown( KeyBinds.getKey("Right"))) {
             dude.AddFoce(0, RIGHT_SPEED * Time.deltaTime, 0);
         }
 
